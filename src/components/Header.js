@@ -35,7 +35,7 @@ export const Header = () => {
         setAnchorEl(null);
     };
     // useWebAnimations
-    const { ref } = useWebAnimations({...zoomIn})
+    const { ref } = useWebAnimations({...zoomIn});
     return (
         <div>
             <header className="header" id="header">
