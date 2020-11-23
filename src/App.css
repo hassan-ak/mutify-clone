@@ -456,6 +456,102 @@ audio,video{
     display:none;
     width:100%
 }
+.noise-level{
+    position:relative;
+    padding-top:100px;
+    padding-bottom:100px
+}
+.noise-level:before{
+    top:50%;
+    background-image:-webkit-gradient(linear,left top,left bottom,from(#d9e4ff),to(#fff));
+    background-image:-webkit-linear-gradient(top,#d9e4ff,#fff);
+    background-image:-o-linear-gradient(top,#d9e4ff,#fff);
+    background-image:linear-gradient(180deg,#d9e4ff,#fff)
+}
+.noise-level:after,.noise-level:before{
+    content:"";
+    position:absolute;
+    right:0;
+    left:0;
+    height:800px
+}
+.noise-level:after{
+    bottom:50%;
+    background-image:-webkit-gradient(linear,left bottom,left top,from(#d9e4ff),to(#fff));
+    background-image:-webkit-linear-gradient(bottom,#d9e4ff,#fff);
+    background-image:-o-linear-gradient(bottom,#d9e4ff,#fff);
+    background-image:linear-gradient(0deg,#d9e4ff,#fff)
+}
+.noise-level__inner{
+    position:relative;
+    z-index:1
+}
+.noise-level__block{
+    position:relative;
+    background-image:url(./images/noise-level-312d9e01fe.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50%;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    -webkit-box-shadow:0 30px 80px 0 rgba(85,85,135,.4);
+    box-shadow:0 30px 80px 0 rgba(85,85,135,.4);
+    padding:156px 80px;
+    overflow:hidden
+}
+.noise-level__content{
+    position:relative;
+    z-index:1
+}
+.title_white{
+    color:#fff
+}
+.noise-level__title{
+    max-width:400px;
+    margin-bottom:20px
+}
+.noise-level p{
+    max-width:440px;
+    color:hsla(0,0%,100%,.7);
+    margin-top:0;
+    margin-bottom:30px
+}
+.noise-level__right-block{
+    position:absolute;
+    top:50%;
+    right:-20px;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%)
+}
+.noise-level__right-block img{
+    margin-top:50px;
+    margin-right:-138px
+}
+.noise-level__circles-wrapper{
+    position:absolute;
+    top:50%;
+    right:130px;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%)
+}
+.noise-level__circle{
+    width:20px;
+    height:20px;
+    background-color:hsla(0,0%,100%,.3);
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    margin-right:25px
+}
+.noise-level__circle:last-child{
+    margin-right:0
+}
 
 
 @media only screen and (max-width:1199px){
@@ -477,6 +573,22 @@ audio,video{
         left:-280px;
         -webkit-transform:scale3d(.7,.7,.7);
         transform:scale3d(.7,.7,.7)
+    }
+    .noise-level__block{
+        -webkit-background-size:cover;
+        background-size:cover;
+        padding:101px 40px
+    }
+    .noise-level__right-block img{
+        margin-right:-182px;
+        -webkit-transform:scale3d(.8,.8,.8);
+        transform:scale3d(.8,.8,.8)
+    }
+    .noise-level__circle:nth-of-type(6){
+        margin-right:0
+    }
+    .noise-level__circle:nth-of-type(7),.noise-level__circle:nth-of-type(8){
+        display:none
     }
 }
 @media only screen and (max-width:991px){
@@ -556,6 +668,39 @@ audio,video{
         -webkit-transform:scale3d(.75,.75,.75);
         transform:scale3d(.75,.75,.75)
     }
+    .noise-level{
+        padding-bottom:0
+    }
+    .noise-level__block{
+        padding-top:67.5px;
+        padding-bottom:67.5px
+    }
+    .noise-level__title{
+        max-width:300px
+    }
+    .noise-level p{
+        max-width:330px
+    }
+    .noise-level__right-block img{
+        margin-right:-250px;
+        -webkit-transform:scale3d(.6,.6,.6);
+        transform:scale3d(.6,.6,.6)
+    }
+    .noise-level__circles-wrapper{
+        top:51%;
+        right:100px
+    }
+    .noise-level__circle{
+        width:17.5px;
+        height:17.5px;
+        margin-right:20px
+    }
+    .noise-level__circle:nth-of-type(5){
+        margin-right:0
+    }
+    .noise-level__circle:nth-of-type(6){
+        display:none
+    }
 }
 @media only screen and (max-width:767px){
     body{
@@ -606,6 +751,31 @@ audio,video{
         left:-200px;
         -webkit-transform:scale3d(.6,.6,.6);
         transform:scale3d(.6,.6,.6)
+    }
+    .noise-level{
+        padding-top:75px
+    }
+    .noise-level__block{
+        padding:50px 30px
+    }
+    .noise-level__title{
+        max-width:270px
+    }
+    .noise-level p{
+        max-width:240px
+    }
+    .noise-level__right-block img{
+        margin-top:30px;
+        margin-right:-280px;
+        -webkit-transform:scale3d(.45,.45,.45);
+        transform:scale3d(.45,.45,.45)
+    }
+    .noise-level__circles-wrapper{
+        top:50%;
+        right:92px
+    }
+    .noise-level__circle{
+        margin-right:10px
     }
 }
 @media only screen and (max-width:575px){
@@ -712,11 +882,61 @@ audio,video{
     .switch-device__full-image{
         display:block
     }
+    .noise-level:after,.noise-level:before{
+        height:650px
+    }
+    .noise-level__block{
+        -webkit-border-radius:7.5px;
+        border-radius:7.5px;
+        padding:30px 20px
+    }
+    .noise-level__title{
+        max-width:100%;
+        margin-bottom:10px
+    }
+    .noise-level p{
+        max-width:280px;
+        margin-bottom:20px
+    }
+    .noise-level__right-block{
+        position:relative;
+        top:auto;
+        right:auto;
+        text-align:center;
+        margin-top:60px
+    }
+    .noise-level__right-block,.noise-level__right-block img{
+        -webkit-transform:none;
+        -ms-transform:none;
+        transform:none
+    }
+    .noise-level__right-block img{
+        width:375px;
+        height:384px;
+        margin:-100px -25%
+    }
+    .noise-level__circles-wrapper{
+        top:43%;
+        right:auto;
+        left:49.5%;
+        -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%)
+    }
+    .noise-level__circle{
+        width:15px;
+        height:15px
+    }
 }
 @media only screen and (max-width:400px){
     .footer__feedback img,.footer__feedback video{
         right:-150px;
         bottom:-105px;
         width:350px
+    }
+}
+@media (-o-min-device-pixel-ratio:2/1),(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
+    .noise-level__block{
+        background-image:url(./images/noise-level@2x-8a4e6451fa.jpg)
     }
 }
