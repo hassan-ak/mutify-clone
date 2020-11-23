@@ -2,10 +2,10 @@
 // Component Imports
 import { Header } from "./components/Header";
 import { Section01 } from './components/Section01';
+import { Section04 } from './components/Section04';
 import { Footer1 } from './components/Footer1';
 // Styles Imports
 import './App.css';
-
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <div className="content-wrap">
         <Header/>
         <Section01/>
+        <Section04/>
       </div>
     <Footer1/>
     </div>
@@ -22,4 +23,3 @@ function App() {
 }
 
 export default App;
-

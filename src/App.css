@@ -362,6 +362,101 @@ audio,video{
     color:rgba(40,40,65,.35);
     margin-top:55px
 }
+.switch-device{
+    padding-top:140px;
+    padding-bottom:555px;
+    overflow:hidden
+}
+.switch-device__inner{
+    position:relative
+}
+.switch-device__content{
+    position:relative;
+    z-index:3;
+    max-width:590px;
+    padding-right:50px;
+    margin-left:auto
+}
+.switch-device__title{
+    margin-bottom:30px
+}
+.switch-device p{
+    margin-top:0;
+    margin-bottom:40px
+}
+.switch-device__images-wrapper{
+    position:absolute;
+    top:30px;
+    left:-210px
+}
+.switch-device__macbook-image{
+    position:relative;
+    z-index:1
+}
+.switch-device__mutify-window-image{
+    position:absolute;
+    top:-30px;
+    left:390px;
+    z-index:2;
+    display:block;
+}
+.switch-device__airpods-wrapper{
+    position:absolute;
+    top:190px;
+    left:170px;
+    z-index:2;
+    width:150px;
+    height:195px
+}
+.switch-device__airpods-wrapper img{
+    position:absolute;
+    display:block;
+    -webkit-animation-duration:2s;
+    animation-duration:2s
+}
+.switch-device__airpods-wrapper img:first-of-type{
+    top:0;
+    left:-40px
+}
+.switch-device__airpods-wrapper img:nth-of-type(2){
+    right:-10px;
+    top:45px
+}
+.switch-device__wave-wrapper{
+    position:absolute;
+    bottom:-130px;
+    left:-180px
+}
+.switch-device__wave-wrapper:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    height:100%;
+    width:100px;
+    background-image:-webkit-gradient(linear,right top,left top,from(hsla(0,0%,100%,0)),color-stop(48%,#fff),to(#fff));
+    background-image:-webkit-linear-gradient(right,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:-o-linear-gradient(right,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:linear-gradient(270deg,hsla(0,0%,100%,0),#fff 48%,#fff)
+}
+.switch-device__wave-wrapper:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:460px;
+    background-image:-webkit-gradient(linear,left top,right top,from(hsla(0,0%,100%,0)),color-stop(48%,#fff),to(#fff));
+    background-image:-webkit-linear-gradient(left,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:-o-linear-gradient(left,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:linear-gradient(90deg,hsla(0,0%,100%,0),#fff 48%,#fff)
+}
+.switch-device__full-image{
+    display:none;
+    width:100%
+}
+
 
 @media only screen and (max-width:1199px){
     body{
@@ -373,6 +468,15 @@ audio,video{
     .footer__feedback{
         padding-right:40px;
         padding-left:40px
+    }
+    .switch-device{
+        padding-bottom:350px
+    }
+    .switch-device__images-wrapper{
+        top:0;
+        left:-280px;
+        -webkit-transform:scale3d(.7,.7,.7);
+        transform:scale3d(.7,.7,.7)
     }
 }
 @media only screen and (max-width:991px){
@@ -437,6 +541,21 @@ audio,video{
         margin-top:40px;
         margin-left:auto
     }
+    .switch-device{
+        padding-top:100px;
+        padding-bottom:700px
+    }
+    .switch-device__content{
+        max-width:510px;
+        padding-right:0;
+        margin-left:0
+    }
+    .switch-device__images-wrapper{
+        top:auto;
+        left:-115px;
+        -webkit-transform:scale3d(.75,.75,.75);
+        transform:scale3d(.75,.75,.75)
+    }
 }
 @media only screen and (max-width:767px){
     body{
@@ -477,6 +596,16 @@ audio,video{
     .footer__feedback img,.footer__feedback video{
         width:500px;
         height:500px
+    }
+    .switch-device{
+        padding-top:75px;
+        padding-bottom:550px
+    }
+    .switch-device__images-wrapper{
+        top:200px;
+        left:-200px;
+        -webkit-transform:scale3d(.6,.6,.6);
+        transform:scale3d(.6,.6,.6)
     }
 }
 @media only screen and (max-width:575px){
@@ -563,6 +692,26 @@ audio,video{
         font-size:14px;
         margin-top:20px
     } 
+    .switch-device{
+        padding-top:75px;
+        padding-bottom:75px
+    }
+    .switch-device__content{
+        max-width:100%;
+        margin-bottom:30px
+    }
+    .switch-device__title{
+        margin-bottom:20px
+    }
+    .switch-device p{
+        margin-bottom:30px
+    }
+    .switch-device__images-wrapper{
+        display:none
+    }
+    .switch-device__full-image{
+        display:block
+    }
 }
 @media only screen and (max-width:400px){
     .footer__feedback img,.footer__feedback video{
