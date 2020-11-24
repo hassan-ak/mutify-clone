@@ -552,6 +552,178 @@ audio,video{
 .noise-level__circle:last-child{
     margin-right:0
 }
+.work-with{
+    text-align:center;
+    padding-bottom:140px;
+    overflow:hidden
+}
+.work-with__inner{
+    position:relative;
+    z-index:1
+}
+.work-with__microphone-control{
+    position:relative;
+    padding-top:330px;
+    margin-bottom:225px
+}
+.work-with__title{
+    max-width:550px;
+    margin-right:auto;
+    margin-bottom:30px;
+    margin-left:auto
+}
+.work-with p{
+    max-width:565px;
+    margin:0 auto 40px
+}
+.work-with__microphone-control>img{
+    max-width:100%;
+    -webkit-border-radius:11px;
+    border-radius:11px;
+    -webkit-box-shadow:0 30px 80px 0 rgba(40,52,205,.4);
+    box-shadow:0 30px 80px 0 rgba(40,52,205,.4)
+}
+.work-with__button{
+    margin-right:30px
+}
+.work-with__button:last-child{
+    margin-right:0
+}
+.work-with__macbook-wrapper{
+    position:relative;
+    margin-bottom:40px
+}
+.work-with__macbook-wrapper>img{
+    position:relative;
+    z-index:1;
+    max-width:100%
+}
+.work-with__macbook-wrapper>img:last-of-type{
+    position:absolute;
+    top:-30px;
+    right:270px;
+    display:block
+}
+.work-with__wave-wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%)
+}
+.work-with__wave-wrapper:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:450px;
+    background-image:-webkit-gradient(linear,right top,left top,from(hsla(0,0%,100%,0)),color-stop(48%,#fff),to(#fff));
+    background-image:-webkit-linear-gradient(right,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:-o-linear-gradient(right,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:linear-gradient(270deg,hsla(0,0%,100%,0),#fff 48%,#fff)
+}
+.work-with__wave-wrapper:after{
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:450px;
+    background-image:-webkit-gradient(linear,left top,right top,from(hsla(0,0%,100%,0)),color-stop(48%,#fff),to(#fff));
+    background-image:-webkit-linear-gradient(left,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:-o-linear-gradient(left,hsla(0,0%,100%,0),#fff 48%,#fff);
+    background-image:linear-gradient(90deg,hsla(0,0%,100%,0),#fff 48%,#fff)
+}
+.work-with__logo{
+    position:absolute;
+    font-size:16px;
+    text-align:center;
+    color:#282841
+}
+.work-with__logo img{
+    display:block;
+    margin-right:auto;
+    margin-bottom:15px;
+    margin-left:auto
+}
+.work-with__logo img:last-child{
+    margin-bottom:0
+}
+.work-with__logo_fb{
+    right:120px;
+    bottom:155px
+}
+.work-with__logo_fb.work-with__logo_blurred{
+    right:auto;
+    bottom:620px;
+    left:0
+}
+.work-with__logo_skype{
+    right:195px;
+    bottom:455px
+}
+.work-with__logo_skype.work-with__logo_blurred{
+    right:-170px;
+    bottom:250px
+}
+.work-with__logo_slack{
+    right:460px;
+    bottom:570px
+}
+.work-with__logo_slack.work-with__logo_blurred{
+    right:auto;
+    bottom:335px;
+    left:130px
+}
+.work-with__logo_hangouts{
+    bottom:515px;
+    left:205px
+}
+.work-with__logo_hangouts.work-with__logo_blurred{
+    bottom:290px;
+    left:-160px
+}
+.work-with__logo_viber{
+    bottom:100px;
+    left:160px
+}
+.work-with__logo_viber.work-with__logo_blurred{
+    right:35px;
+    bottom:565px;
+    left:auto
+}
+.work-with__logo_telegram{
+    bottom:30px;
+    left:-80px
+}
+.work-with__logo_telegram.work-with__logo_blurred{
+    right:400px;
+    bottom:440px;
+    left:auto
+}
+.work-with__logo_blurred{
+    -webkit-filter:blur(10px);
+    filter:blur(10px);
+    opacity:.6
+}
+.work-with__logo_appear{
+    right:-100px;
+    bottom:65px
+}
+.work-with__logo_go-to-meetings{
+    right:-40px;
+    bottom:340px
+}
+.work-with__logo_zoom{
+    bottom:420px;
+    left:405px
+}
+.work-with__logo_webex{
+    bottom:370px;
+    left:-25px
+}
 
 
 @media only screen and (max-width:1199px){
@@ -590,6 +762,32 @@ audio,video{
     .noise-level__circle:nth-of-type(7),.noise-level__circle:nth-of-type(8){
         display:none
     }
+    .work-with__macbook-wrapper>img:last-of-type{
+        right:210px
+    }
+    .work-with__logo_fb{
+        right:70px
+    }
+    .work-with__logo_fb.work-with__logo_blurred{
+        right:auto
+    }
+    .work-with__logo_slack{
+        right:340px
+    }
+    .work-with__logo_slack.work-with__logo_blurred{
+        right:auto
+    }
+    .work-with__logo_viber{
+        left:100px
+    }
+    .work-with__logo_viber.work-with__logo_blurred{
+        left:auto
+    }
+    .work-with__logo_telegram.work-with__logo_blurred{
+        right:350px;
+        bottom:410px
+    }
+    
 }
 @media only screen and (max-width:991px){
     body{
@@ -701,6 +899,46 @@ audio,video{
     .noise-level__circle:nth-of-type(6){
         display:none
     }
+    .work-with{
+        padding-bottom:0
+    }
+    .work-with__microphone-control{
+        margin-bottom:100px
+    }
+    .work-with p{
+        max-width:490px
+    }
+    .work-with__macbook-wrapper>img:last-of-type{
+        top:-20px;
+        right:160px;
+        height:150px;
+        width:150px
+    }
+    .work-with__wave-wrapper img{
+        height:240px
+    }
+    .work-with__logo_fb{
+        right:0
+    }
+    .work-with__logo_skype{
+        right:150px
+    }
+    .work-with__logo_hangouts{
+        left:100px
+    }
+    .work-with__logo_viber{
+        left:0
+    }
+    .work-with__logo_blurred,.work-with__logo_telegram{
+        display:none
+    }
+    .work-with__logo_zoom{
+        bottom:390px;
+        left:235px
+    }
+    .work-with__logo_webex{
+        left:-10px
+    } 
 }
 @media only screen and (max-width:767px){
     body{
@@ -776,6 +1014,48 @@ audio,video{
     }
     .noise-level__circle{
         margin-right:10px
+    }
+    .work-with__microphone-control{
+        margin-bottom:50px
+    }
+    .work-with p{
+        max-width:460px
+    }
+    .work-with__macbook-wrapper>img:last-of-type{
+        right:115px;
+        width:120px;
+        height:120px
+    }
+    .work-with__wave-wrapper:after,.work-with__wave-wrapper:before{
+        display:none
+    }
+    .work-with__wave-wrapper img{
+        height:180px
+    }
+    .work-with__logo_fb{
+        bottom:170px
+    }
+    .work-with__logo_skype{
+        right:20px;
+        bottom:530px
+    }
+    .work-with__logo_slack{
+        right:180px;
+        bottom:490px
+    }
+    .work-with__logo_hangouts{
+        left:60px
+    }
+    .work-with__logo_viber
+    {
+        bottom:170px
+    }
+    .work-with__logo_go-to-meetings{
+        right:60px
+    }
+    .work-with__logo_zoom{
+        bottom:380px;
+        left:170px
     }
 }
 @media only screen and (max-width:575px){
@@ -926,6 +1206,144 @@ audio,video{
     .noise-level__circle{
         width:15px;
         height:15px
+    }
+    .work-with__microphone-control{
+        padding-top:500px;
+        margin-right:auto;
+        margin-bottom:80px;
+        margin-left:auto
+    }
+    .work-with__title{
+        max-width:290px;
+        margin-right:auto;
+        margin-bottom:10px;
+        margin-left:auto
+    }
+    .work-with p{
+        max-width:410px;
+        margin-bottom:20px
+    }
+    .work-with__microphone-control>img{
+        width:100%
+    }
+    .work-with__button{
+        margin-right:0;
+        margin-bottom:10px
+    }
+    .work-with__button:last-child{
+        margin-bottom:0
+    }
+    .work-with__macbook-wrapper{
+        margin-right:auto;
+        margin-bottom:20px;
+        margin-left:auto
+    }
+    .work-with__macbook-wrapper>img:first-of-type{
+        max-width:none;
+        width:108%;
+        margin-left:-4%
+    }
+    .work-with__macbook-wrapper>img:last-of-type{
+        top:-13%;
+        right:19%;
+        width:30%;
+        height:auto
+    }
+    .work-with__wave-wrapper{
+        display:none
+    }
+    .work-with__wave-wrapper img{
+        height:100px
+    }
+    .work-with__logos-wrapper{
+        position:absolute;
+        top:0;
+        left:50%;
+        max-width:350px;
+        width:100%;
+        height:100%;
+        -webkit-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+        transform:translateX(-50%)
+    }
+    .work-with__logo img{
+        -webkit-transform:scale3d(.7,.7,.7);
+        transform:scale3d(.7,.7,.7)
+    }
+    .work-with__logo_fb{
+        top:160px;
+        right:auto;
+        bottom:auto;
+        left:7%
+    }
+    .work-with__logo_skype{
+        top:120px;
+        right:0;
+        bottom:auto;
+        left:3%
+    }
+    .work-with__logo_slack{
+        top:100px;
+        right:1%;
+        bottom:auto
+    }
+    .work-with__logo_hangouts{
+        top:260px;
+        bottom:auto;
+        left:25%
+    }
+    .work-with__logo_viber{
+        top:340px;
+        right:10px;
+        bottom:auto;
+        left:auto
+    }
+    .work-with__logo_telegram{
+        top:227px;
+        right:15%;
+        bottom:auto;
+        left:auto;
+        display:block
+    }
+    .work-with__logo_telegram.work-with__logo_blurred{
+        display:none
+    }
+    .work-with__logo_appear{
+        top:43px;
+        right:auto;
+        bottom:auto;
+        left:10%
+    }
+    .work-with__logo_go-to-meetings{
+        top:0;
+        right:29%;
+        bottom:auto
+    }
+    .work-with__logo_zoom{
+        top:370px;
+        right:33%;
+        bottom:auto;
+        left:auto
+    }
+    .work-with__logo_zoom span{
+        bottom:0!important
+    }
+    .work-with__logo span{
+        position:absolute;
+        bottom:-10px;
+        left:50%;
+        white-space:nowrap;
+        -webkit-transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+        transform:translateX(-50%)
+    }
+    .work-with__logo_skype span{
+        bottom:0!important
+    }
+    .work-with__logo_webex{
+        top:350px;
+        left:1%;
+        bottom:auto
     }
 }
 @media only screen and (max-width:400px){
